@@ -13,10 +13,10 @@ module.exports = async (req, res) => {
     return res.status(400).json({
       success: false,
       message: "Phone number is required",
-      usage: "https://your-app.vercel.app/?num=9876543210",
-      example: "https://your-app.vercel.app/?num=9876543210",
+      usage: "?num=",
+      example: "?num=6395954711",
       developer: "@Ros3_Zii",
-      trial: "♾ Days",
+      trial: "7 Days",
       note: "JAI MAHAKAL 🥰"
     });
   }
@@ -60,7 +60,7 @@ module.exports = async (req, res) => {
       ...jsonData,
       metadata: {
         developer: "@Ros3_Zii",
-        trial_period: "♾ Days",
+        trial_period: "7 Days",
         note: "JAI MAHAKAL 🥰",
         timestamp: new Date().toISOString(),
         api_source: "@Ros3_Zii"
@@ -78,7 +78,7 @@ module.exports = async (req, res) => {
       message: error.message,
       number: num,
       developer: "@Ros3_Zii",
-      trial: "♾ Days",
+      trial: "7 Days",
       note: "JAI MAHAKAL 🥰",
       suggestion: "Try with different number or check if API is working"
     });
