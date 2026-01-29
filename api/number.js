@@ -26,7 +26,7 @@ module.exports = async (req, res) => {
     const cleanNum = num.toString().replace(/\D/g, '');
     
     // Call the external API
-    const apiUrl = `https://api-ij32.onrender.com/lookup?match=${cleanNum}`;
+    const apiUrl = `https://osint-num-info.gauravcyber0.workers.dev/?mobile=${cleanNum}`;
     console.log('Calling API:', apiUrl);
     
     const response = await fetch(apiUrl, {
